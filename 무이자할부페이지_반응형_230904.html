@@ -1,0 +1,431 @@
+<HTML>
+    <HEAD>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <style>
+            @font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('./woff2/Pretendard-Black.woff2') format('woff2'), url('./woff/Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('./woff2/Pretendard-ExtraBold.woff2') format('woff2'), url('./woff/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('./woff2/Pretendard-Bold.woff2') format('woff2'), url('./woff/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('./woff2/Pretendard-SemiBold.woff2') format('woff2'), url('./woff/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('./woff2/Pretendard-Medium.woff2') format('woff2'), url('./woff/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('./woff2/Pretendard-Regular.woff2') format('woff2'), url('./woff/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('./woff2/Pretendard-Light.woff2') format('woff2'), url('./woff/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('./woff2/Pretendard-ExtraLight.woff2') format('woff2'), url('./woff/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('./woff2/Pretendard-Thin.woff2') format('woff2'), url('./woff/Pretendard-Thin.woff') format('woff');
+}
+/****폰트 끝****/
+#rending_wrap{
+    margin : 0 auto;
+    font-size : inherit;
+    color : inherit;
+    border-radius : inherit;
+    box-sizing: border-box;
+	text-align: center;
+	padding : 0;
+	font-family: 'pretendard';
+	height : auto;
+    width : 100%;
+}
+#rending_wrap ul {
+    padding : 0;
+    margin : 0 auto;
+}
+#rending_wrap li{
+    list-style-type: none;
+    text-decoration: none;
+	display : inline-block;
+}
+#rending_wrap{
+    width: 1160px;
+    box-sizing: border-box;
+    background-color: #ffc500;
+}
+#rending_construct{
+	padding-bottom: 0;
+	margin-top : 10px;
+}
+/*******시작**********/
+.rending_main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+}
+.main_txt{
+	background-image: url(https://ftp.suzakpc.co.kr/suzak_img/sub/rate/txt_bg2.png);
+	background-repeat: no-repeat;
+	width : 50%;
+	text-align: left;
+	font-weight : bold;
+	padding : 180px 0 400px;
+}
+#main_space{
+	letter-spacing : 3px;
+    font-size : 70px;
+}
+.main_txt img{
+	width : 32%;
+	padding-left : 20px;
+}
+.main_txt h1{
+	font-size : 70px;
+	color : #fff;
+	text-align: center;
+}
+.rending_main>#main_bg{
+	/***background-image: url(https://ftp.suzakpc.co.kr/suzak_img/sub/rate/main_bg2.jpg);
+	width : 100%;
+	background-size: auto;
+	position : relative;
+	z-index : 0;**/
+    overflow: hidden;
+    width : 50%;
+}
+.infinite_rotating{
+	animation : rotate_img 4s linear infinite;
+	transform-origin: 0;
+}
+@keyframes rotate_img{
+	100%{
+		transform :rotateX(360deg);
+	}
+}
+/**********construct1************/
+
+.rending_construct1{
+	padding-bottom : 0px;
+	transform : translate(0, -230px);
+}
+.rending_construct1>ul{
+	display: flex;
+	flex-direction: row;
+	transform : translate(0, -380px);
+	justify-content: space-around;
+    width : 80%;
+}
+.point3{
+	transition-delay: 0.7s;
+}
+/***construct2****/
+.rending_construct2{
+	margin-bottom : 120px;
+	transform : translate(0,-100px);
+}
+.rending_construct2.aos-init.aos-animate{
+    margin-top : -300px;
+}
+
+/***construct3***/
+.rending_construct3{
+	padding-bottom: 120px;
+}
+.rending_construct3>#tit3{
+	margin-bottom : 87px;
+}
+.card_period{
+	display : flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+}
+/***construct4***/
+.rending_construct4{
+	padding-bottom : 80px;
+ }
+.rending_construct4>#tit4{
+	margin-bottom : 50px;
+}
+.product{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+[class*="product_"]{
+	margin-bottom: 30px;
+}
+[class*="product_1"]{
+	
+}
+[class*="product_2"]{
+	transition-delay:  0.5s;
+}
+[class*="product_3"]{
+	transition-delay:  1s;
+}
+[class*="product_4"]{
+	transition-delay:  1.5s;
+}
+
+/*****유의사항*******/
+.event_in{
+	background-color: #d8d8d8;
+	color : #777;
+	padding : 30px 50px;
+}
+.event_in>h4{
+	text-align: left;
+	font-size: 1.3rem;
+	padding-bottom : 20px;
+}
+.event_in>p{
+	font-size : 1rem;
+	text-align: left;
+}
+/****모바일****/
+@media screen and (max-width : 767px){
+    #rending_wrap{
+        width : 100%;
+    }
+    #rending_construct{
+        padding : 0;
+    }
+
+    .main_txt{
+        background-image: none;
+        height : 222px;
+        padding : 0;
+        width : 60%;
+        vertical-align: middle;
+        margin-top : 30px;
+    }
+    .main_txt img{
+        width : 20%;
+    }
+    .main_txt h1{
+        font-size: 1.7rem;
+    }
+    /**할부 키포인트**/
+    .rending_construct1{
+        transform : translate(0,-115px);
+        width : 90%;
+        margin : 0 auto;
+    }
+    .rending_construct1>ul{
+        transform : translate(0,-116px);
+    }
+    .rending_construct1 .point3{
+        width : 35%;
+        padding : 0 5px;
+        box-sizing: border-box;
+    }
+    .point3{
+        transition-delay : 0s;
+    }
+    /**무이자 할부 방법***/
+    .rending_construct2{
+        transition-delay : .5s;
+    }
+    .rending_construct2.aos-init.aos-animate{
+        margin-top : -180px;
+    }
+    /***무아지 카드 할부***/
+    .rending_construct3{
+        margin-top : -60px;
+    }
+    .rending_construct3>img{
+        width : 70%;
+    }
+    .rending_construct3>#tit3{
+        margin-bottom : 30px;
+    }
+    .card_period {
+        width : 90%;
+        justify-content: space-around;
+        margin : 0 auto;
+    }
+    /**pc 추천**/
+    .rending_construct4>#tit4{
+        width : 70%;
+        margin-bottom : 30px;
+    }
+    .rending_construct4>.product>li{
+        width : 50%;
+    }
+    .rending_construct4 [class*="product_"]{
+       
+    }
+}
+        </style>
+    </HEAD>
+    <BODY>
+        <div id="rending_wrap">
+            <section class="rending_main">
+                <div class="main_txt">
+                    <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/20months.png" alt="최대 20개월" class="infinite_rotating">
+                    <h1>무이자 할부
+                        <br>PC득템하기
+                    </h1>
+                </div>
+                <div id="main_bg">
+                    <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/main_bg2.jpg" alt="메인 배너">
+                </div>
+            </section>
+            <div class="rending_construct">
+                <!----무이자 할부 키포인트-->
+                <div class="rending_construct1">
+                    <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/rend_c1.png" alt ="키포인트bg">
+                    <ul>
+                        <li class="point3" data-aos="zoom-in" data-aos-anchor-placement="top">
+                            <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/rate.png" alt="낮은 월비용">
+                        </li>
+                        <li class="point3" data-aos="zoom-in"  data-aos-anchor-placement="top">
+                            <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/expert.png" alt="전문가">
+                        </li>
+                         <li class="point3" data-aos="zoom-in"  data-aos-anchor-placement="top">
+                            <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/customer.png" alt="고객만족센터">
+                        </li>
+                    </ul>
+                </div>
+                <!----무이자 할부 방법-->
+                <div class="rending_construct2" data-aos="zoom-in-up">
+                    <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/rend_c2.png" alt="무이자 할부 방법">
+                </div>
+                <!----무이자 할부 카드-->
+                <div class="rending_construct3">
+                    <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/tit3.png" alt="무이자할부카드" id="tit3">
+                        <div class="card_period">
+                            <div id="short_period" 
+                            data-aos="fade-right"
+                            data-aos-offset="200"
+                            data-aos-easing="ease-in-sine">
+                            <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/short.png" alt="단기">
+                        </div>
+                            <div id = "long_period"
+                            data-aos="fade-left"
+                            data-aos-offset="200"
+                            data-aos-easing="ease-in-sine">
+                            <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/long.png" alt="장기">
+                        </div>    
+                    </div>
+                </div>
+                <!----무이자 할부 추천-->
+                <div class="rending_construct4">
+                    <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/tit4.png" alt="무이자할부PC추천" id="tit4">
+                    <ul class="product">
+                        <li class="product_1_1" 
+                        data-aos="fade-right"
+                            data-aos-offset="100"
+                            data-aos-easing="ease-in-sine">
+                            <a href="https://www.suzakpc.co.kr/shop/item.php?it_id=2642060590" target="_blank">
+                                <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/p1-1.png" alt="제품1"></a>
+                        </li>
+                        <li class="product_1_2" 
+                        data-aos="fade-left"
+                        data-aos-offset="100"
+                        data-aos-easing="ease-in-sine">
+                            <a href="https://www.suzakpc.co.kr/shop/item.php?it_id=2638519909" target="_blank">
+                                <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/p1-2.png" alt="제품2"></a>
+                        </li>
+                        <li class="product_2_1" 
+                        data-aos="fade-right"
+                        data-aos-offset="100"
+                        data-aos-easing="ease-in">
+                            <a href="https://www.suzakpc.co.kr/shop/item.php?it_id=2642127615" target="_blank">
+                                <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/p2-1.png" alt="제품3"></a>
+                        </li>
+                        <li class="product_2_2"
+                        data-aos="fade-left"
+                        data-aos-offset="100"
+                        data-aos-easing="ease-in">
+                            <a href="https://www.suzakpc.co.kr/shop/item.php?it_id=2642062218" target="_blank">
+                                <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/p2-2.png" alt="제품4"></a>
+                        </li>
+                        <li class="product_3_1"
+                        data-aos="fade-right"
+                        data-aos-offset="100"
+                        data-aos-easing="ease-in">
+                            <a href="https://www.suzakpc.co.kr/shop/item.php?it_id=2642128211" target="_blank">
+                                <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/p3-1.png" alt="제품5"></a>
+                        </li>
+                        <li class="product_3_2"
+                        data-aos="fade-left"
+                        data-aos-offset="100"
+                        data-aos-easing="ease-in">
+                            <a href="https://www.suzakpc.co.kr/shop/item.php?it_id=2638521054" target="_blank">
+                                <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/p3-2.png" alt="제품6"></a>
+                        </li>
+                        <li class="product_4_1"
+                        data-aos="fade-right"
+                        data-aos-offset="100"
+                        data-aos-easing="ease-in">
+                            <a href="https://www.suzakpc.co.kr/shop/item.php?it_id=2642062820" target="_blank">
+                                <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/p4-1.png" alt="제품7"></a>
+                        </li>
+                        <li class="product_4_2"
+                        data-aos="fade-left"
+                        data-aos-offset="100"
+                        data-aos-easing="ease-in">
+                            <a href="https://www.suzakpc.co.kr/shop/item.php?it_id=2642062476" target="_blank">
+                                <img src="https://ftp.suzakpc.co.kr/suzak_img/sub/rate/p4-2.png" alt="제품8"></a>
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+            <!---유의사항-->
+            <div class="event_in">
+                <h4>유의사항</h4>
+                <p>- 본 이벤트는 당사 사정에 따라 상품 변경 및 중단될 수 있습니다.
+                    <br>- 카드사의 사정으로 변경 또는 중단될 수 있습니다.
+                    <br>- 상단에 있는 상품들만 이벤트에 적용됩니다.
+                </p>
+            </div>
+        </div>
+        <script> 
+            AOS.init(); 
+          </script> 
+    </BODY>
+</HTML>
